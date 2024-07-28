@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model MstUser
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Id)</th>
+            <th>@Html.DisplayNameFor(model => model.uname)</th>
+            <th>@Html.DisplayNameFor(model => model.email)</th>
+            <th>@Html.DisplayNameFor(model => model.phonenum)</th>
+            <th>@Html.DisplayNameFor(model => model.skillset)</th>
+            <th>@Html.DisplayNameFor(model => model.hobby)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                <td>@Html.DisplayFor(modelItem => item.uname)</td>
+                <td>@Html.DisplayFor(modelItem => item.email)</td>
+                <td>@Html.DisplayFor(modelItem => item.phonenum)</td>
+                <td>@Html.DisplayFor(modelItem => item.skillset)</td>
+                <td>@Html.DisplayFor(modelItem => item.hobby)</td>
+            </tr>
+        }
+    </tbody>
+</table>
